@@ -24,8 +24,8 @@ const idStatusCheck = (request, response, next) => {
 }
 
 const requisitionMethod = (request, response, next) => {
-    // console.log(`Método da requisiçao ${request.method}. URL da requisição http://localhost:3000${request.route.path}`)
     const method = request.method
+    
     const url = request.url
 
     console.log(`Método da requisiçao: ${method}. URL da requisição http://localhost:3000${url}`)
